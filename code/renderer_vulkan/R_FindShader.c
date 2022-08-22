@@ -557,11 +557,11 @@ void ScanAndLoadShaderFiles( void )
 	// build single large buffer
     BuildSingleLargeBuffer(buffers, numShaderFiles, sum);
    
-    FunLogging("BuildSingleLargeBuffer.txt", s_shaderText);
+    //FunLogging("BuildSingleLargeBuffer.txt", s_shaderText);
 	
     R_Compress( s_shaderText );
 
-    FunLogging("after_R_Compress.txt", s_shaderText);
+    //FunLogging("after_R_Compress.txt", s_shaderText);
 
 
 	// free up memory
