@@ -267,6 +267,7 @@ static void GLSL_GetShaderHeader( GLenum shaderType, const GLchar *extra, char *
 	else
 	{
 		Q_strcat(dest, size, "#version 120\n");
+        Q_strcat(dest, size, "#extension GL_ARB_shader_texture_lod : enable\n");
 		Q_strcat(dest, size, "#define shadow2D(a,b) shadow2D(a,b).r \n");
 	}
 
